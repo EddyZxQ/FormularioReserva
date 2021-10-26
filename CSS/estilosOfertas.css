@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #f6f6f6;
+    overflow-y: hidden;
+}
+
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 5px 8%;
+    width: 100%;
+    height: auto;
+
+    background: linear-gradient(135deg, #584EFD, #BB5AFA);
+    color: aliceblue;
+
+    font-family: 'Spartan', sans-serif;
+    font-size: 14pt;
+
+}
+
+
+.logo{
+    margin-right: auto;
+}
+
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+
+    list-style: none;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 20px;
+}
+
+nav ul li a:active, a:visited{
+    color: white;
+
+}
+
+nav ul li{
+    transition: all 0.3s ease 0s ;
+}
+
+
+
+#contenedorOfertas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ofertaFamiliar, .ofertaParejas, .ofertaParaMayores, .ofertaIndividual{
+    margin: 20px;
+    width: 40%;
+    height: 300px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+
+    text-align: center;
+
+}
+
+.ofertaFamiliar{
+    background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
+}
+
+.ofertaParejas{
+    background-image: linear-gradient( 135deg, #FFF3B0 10%, #CA26FF 100%);
+}
+.ofertaParaMayores {
+
+    background-image: linear-gradient( 135deg, #FFAA85 10%, #B3315F 100%);
+}
+
+.ofertaIndividual{
+    background-image: linear-gradient( 135deg, #F0FF00 10%, #58CFFB 100%);
+}
+
+h2{
+    color: black;
+}
+div p{
+    font-size: 22px;
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    color: crimson;
+}
+
+
+#codigoOferta {
+    font-size: 50px;
+    font-weight: bold;
+    color: #23232e;
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Ajustes barra desplazamiento*/
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #23232e;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #584EFD;
+}
+
+
+@media (max-width: 800px) {
+
+    body{
+        overflow-y: auto;
+    }
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        transition: all 0.3s ease 0s ;
+
+    }
+
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu{
+        font-size: 12pt;
+
+    }
+
+    .contenedorOfertas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ofertaFamiliar, .ofertaParejas, .ofertaParaMayores, .ofertaIndividual{
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        padding: 10px 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    }
+
+}
+
+@media (max-width: 420px) {
+    nav ul{
+        display: flex;
+        flex-direction: column;
+
+        list-style: none;
+        text-align: center;
+    }
+
+
+    nav ul li{
+
+        margin: 10px 0px;
+
+    }
+
+
+
+}
+
+

@@ -1,0 +1,94 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+@keyframes slide {
+    from { left: -180px; }
+    to   { left: 30px; }
+}
+
+#contenedor-cookie{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    max-width: 365px;
+    background: #fff;
+    padding: 25px 25px 30px 25px;
+    border-radius: 15px;
+    box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    animation: 2s linear slide;
+
+
+}
+
+
+
+
+#contenedor-cookie img{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+#contenido{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#botones{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+
+}
+
+
+#aceptar{
+    margin-top: 10px;
+    margin-right: 2px;
+    width: 48%;
+    height: 45px;
+    background: #584EFD;
+    border: 2px solid  #584EFD;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color: white;
+
+
+}
+
+#leermas{
+    margin-top: 10px;
+    margin-left: 2px;
+
+    background: #736EFE;
+    padding: 10px 48px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid  #584EFD;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+
+}
+
+
+#leermas:hover{
+
+
+    background: #46439c;
+
+
+}

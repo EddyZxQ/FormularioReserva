@@ -1,0 +1,431 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f6f6f6;
+    overflow-x: hidden;
+}
+
+
+
+/* NAVEGADOR PRINCIPAL*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 5px 8%;
+    width: 100%;
+    height: auto;
+
+   background: linear-gradient(135deg, #584EFD, #BB5AFA);
+
+
+    color: aliceblue;
+
+    font-family: 'Spartan', sans-serif;
+    font-size: 14pt;
+
+}
+
+
+.logo{
+    margin-right: auto;
+}
+
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+
+    list-style: none;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 20px;
+}
+
+nav ul li a:active, a:visited{
+    color: white;
+
+}
+
+
+
+
+
+
+/* BANNER ENCABEZADO */
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.banner{
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    height: 954px;
+}
+
+.eslogan{
+
+    display: flex;
+    flex-direction: column;
+
+    width: 40rem;
+    height: 46rem;
+    margin-right: 10%;
+    padding: 2em;
+}
+
+.eslogan p{
+    color: black;
+    font-family: 'Spartan', sans-serif;
+    font-size: 24pt;
+}
+
+
+.eslogan p strong{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 40pt;
+    color: #a11fd9;
+}
+
+#btn-ofertas{
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+    background: linear-gradient(0.25turn,#584EFD, #BB5AFA);
+    width: 50%;
+    margin-top: auto;
+    margin-left: auto;
+    font-family: 'Spartan', sans-serif;
+    font-size: 10pt;
+    position: relative;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+#btn-ofertas:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fdf7f7;
+    opacity: 0.2;
+    transition: all 0.35s;
+}
+
+
+#btn-ofertas:hover:after{
+    width: 100%;
+}
+
+
+
+/*Ubicaciones*/
+
+.ubicaciones{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(0.25turn,#584EFD, #BB5AFA);
+    font-family: 'Spartan', sans-serif;
+}
+
+.ubicaciones ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+}
+
+.ubicaciones ul li{
+    list-style: none;
+    text-align: center;
+}
+
+.ubicaciones ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/*Informacion Sobre Nosotros*/
+
+.sobreNosotros{
+    margin: 50px auto;
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+    width: 100%;
+}
+.sobreNosotros h1{
+    margin-bottom: 10px;
+}
+
+
+
+/*Porque Nosotros*/
+
+.porqueElegirnos{
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+}
+
+.porqueElegirnos ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.porqueElegirnos ul li{
+    margin: auto 10px;
+    list-style: none;
+    width: 300px;
+    height: 200px;
+}
+
+
+/*PREGUNTAS*/
+
+.container-preguntas{
+    width: 90%;
+    margin: 100px auto;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+
+}
+
+.container-preguntas .titulo{
+    border-radius: 7px 7px 0px 0px;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(0.25turn,#584EFD, #BB5AFA);
+    font-family: 'Spartan', sans-serif;
+    font-size: 14pt;
+}
+
+.preguntas{
+    padding: 10px 20px;
+
+}
+
+::-webkit-details-marker{
+    float: right;
+    margin-top: 3px;
+}
+
+details{
+    background: #f6f6f6;
+    padding: 10px 20px;
+    font-family: 'Spartan', sans-serif;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+details summary{
+    outline: none;
+}
+
+details p{
+    padding: 20px 20px;
+}
+
+
+/*Ajustes barra desplazamiento*/
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #23232e;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #584EFD;
+}
+
+
+
+/*Responsive Media Query*/
+
+@media (max-width: 800px) {
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        transition: all 0.3s ease 0s ;
+    }
+
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu{
+        font-size: 12pt;
+
+    }
+
+
+    .eslogan{
+        width: 520px;
+        padding-bottom: 160px;
+    }
+
+
+
+    .eslogan p{
+        color: black;
+        font-family: 'Spartan', sans-serif;
+        font-size: 20pt;
+        transition: all 0.3s ease 0s ;
+    }
+
+    .eslogan p strong{
+        font-family: 'Dela Gothic One', cursive;
+        font-size: 32pt;
+        color: #a11fd9;
+        transition: all 0.3s ease 0s ;
+
+    }
+
+
+}
+
+
+@media (max-width: 450px) {
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        transition: all 0.3s ease 0s ;
+    }
+
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu{
+        font-size: 10pt;
+
+    }
+
+
+    .eslogan{
+        width: 520px;
+        padding-bottom: 160px;
+    }
+
+
+
+    .eslogan p{
+        color: black;
+        font-family: 'Spartan', sans-serif;
+        font-size: 20pt;
+        transition: all 0.3s ease 0s ;
+    }
+
+    .eslogan p strong{
+        font-family: 'Dela Gothic One', cursive;
+        font-size: 32pt;
+        color: #a11fd9;
+        transition: all 0.3s ease 0s ;
+
+    }
+
+
+}
+
+
+
+@media (max-width: 1200px) {
+    .porqueElegirnos ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .fundadores ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ubicaciones ul {
+        flex-direction: column;
+    }
+}
+
+
+
+
+@media (max-width: 430px) {
+    nav ul{
+        display: flex;
+        flex-direction: column;
+
+        list-style: none;
+        text-align: center;
+    }
+
+
+    nav ul li{
+
+        margin: 10px 0px;
+
+    }
+
+
+    .eslogan p{
+        color: black;
+        font-family: 'Spartan', sans-serif;
+        font-size: 12pt;
+    }
+
+
+    .eslogan p strong{
+        font-family: 'Dela Gothic One', cursive;
+        font-size: 26pt;
+        color: #a11fd9;
+    }
+
+
+}
+
+
+
+
+

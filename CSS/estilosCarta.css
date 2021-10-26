@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+background: #f6f6f6;
+}
+
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 5px 8%;
+    width: 100%;
+    height: auto;
+
+    background: linear-gradient(135deg, #584EFD, #BB5AFA);
+    color: aliceblue;
+
+    font-family: 'Spartan', sans-serif;
+    font-size: 14pt;
+
+}
+
+
+.logo{
+    margin-right: auto;
+}
+
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+
+    list-style: none;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 20px;
+}
+
+nav ul li a:active, a:visited{
+    color: white;
+
+}
+
+nav ul li{
+    transition: all 0.3s ease 0s ;
+}
+
+
+
+.comida{
+    width: 250px;
+    height: 320px;
+}
+
+
+h1{
+    text-align: center;
+    color: crimson;
+    font-size: 30px;
+    margin: 30px;
+}
+
+#lacarta{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.filas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorCarta{
+    margin: 20px;
+    position: relative;
+    width: 250px;
+    height: 320px;
+
+
+}
+
+.carta{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.carta:hover{
+    transform: rotateY(180deg);
+}
+
+
+.delante{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #fff;
+    text-align: center;
+    font-family: 'fantasy', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.detras{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #917CFB;
+    color: #fff;
+    text-align: center;
+    font-family: 'fantasy', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    transform: rotateY(180deg);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.detras p{
+    color: black;
+    font-size: 30px;
+}
+
+/*Ajustes barra desplazamiento*/
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #23232e;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #584EFD;
+}
+
+
+
+@media (max-width: 800px) {
+    .filas{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        transition: all 0.3s ease 0s ;
+    }
+
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu{
+        font-size: 12pt;
+
+    }
+
+
+}
+
+@media (max-width: 420px) {
+    nav ul{
+        display: flex;
+        flex-direction: column;
+
+        list-style: none;
+        text-align: center;
+    }
+
+
+    nav ul li{
+
+        margin: 10px 0px;
+
+    }
+
+
+
+}

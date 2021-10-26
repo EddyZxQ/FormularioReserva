@@ -1,0 +1,8 @@
+El archivo principal seria formularioReserva.php
+
+Descuentos
+-----------
+9K7FGFA
+5T7FGPA
+4S7FGMA
+8P7FGIN

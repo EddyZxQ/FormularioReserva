@@ -1,0 +1,20 @@
+.politicaPrivacidadLink{
+
+    text-align: center;
+}
+
+#politicaLink:hover, #politicaLink:active{
+    color: #917CFB;
+}
+
+#politicaLink:visited, #politicaLink:link{
+    color: #584EFD;
+}
+
+hr{
+    height: 2px;
+    width: 90%;
+    margin: auto;
+    background: #584EFD;
+    border: 0px solid;
+}

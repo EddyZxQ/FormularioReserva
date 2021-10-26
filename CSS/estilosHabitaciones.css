@@ -1,0 +1,418 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f6f6f6;
+    overflow-x: hidden;
+}
+
+
+
+/* NAVEGADOR PRINCIPAL*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 5px 8%;
+    width: 100%;
+    height: auto;
+
+    background: linear-gradient(135deg, #584EFD, #BB5AFA);
+    color: aliceblue;
+
+    font-family: 'Spartan', sans-serif;
+    font-size: 14pt;
+
+}
+
+
+.logo{
+    margin-right: auto;
+}
+
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+
+    list-style: none;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 20px;
+}
+
+nav ul li a:active, a:visited{
+    color: white;
+
+}
+
+nav ul li{
+    transition: all 0.3s ease 0s ;
+}
+
+/*Barra de busqueda*/
+
+#barraDeBusqueda{
+    width: 80%;
+    margin: auto;
+
+}
+
+#barraDeBusqueda input{
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    margin-top: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+
+}
+
+
+/*CATALOGO HABITACIONES*/
+
+
+
+#habitaciones{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Spartan', sans-serif;
+}
+
+.habitacion{
+    width: 80%;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px 20px;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.habitacion a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.habitacion-prevista{
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.habitacion-prevista h1{
+    font-size: 16pt;
+    text-align: center;
+
+}
+
+.habitacion-prevista img{
+    width: 200px;
+    margin: 2px 2px;
+    border-radius: 5px;
+
+}
+
+.habitacion-descripcion{
+    padding: 10px 10px;
+    margin: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+
+.habitacion-descripcion .precio{
+    color: lawngreen;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.habitacion-descripcion .descripcion{
+    font-size: 16px;
+
+
+}
+
+/*Pagina de reserva de la habitacion*/
+
+.contenedorHabitacion{
+
+    margin: 20px auto;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80%;
+    justify-content: space-between;
+    border-radius: 8px ;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.columnaExposicion{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
+}
+
+.incluido{
+
+    margin-top: 20px;
+
+}
+
+.tituloHabitacion{
+    margin: 20px;
+}
+
+.imagenDeExposicion{
+    width: 300px;
+}
+
+.ubicacionHabitacion{
+    margin-top: 20px;
+}
+
+
+/*Seleccion de informacion*/
+
+
+
+
+.columnainformacion{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
+
+}
+
+
+.descripcionHabitacion{
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.serviciosHabitacion{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+
+.servicios{
+ margin-left: 25px;
+}
+
+.seccionserviciosyreserva{
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+#botonReserva{
+    height: 70px;
+    padding: 20px 70px;
+    margin-top: 70px;
+    margin-left: 420px;
+    background: linear-gradient(#584EFD, #584EFD);
+    text-decoration: none;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+
+#botonReserva:active, #botonReserva:visited{
+    color: white;
+
+}
+
+
+#botonReserva:hover{
+    background: linear-gradient(rgb(48, 41, 135), rgb(56, 48, 142));
+    text-decoration: none;
+    color: white;
+
+}
+
+.presio{
+    color: lawngreen;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.carrusel{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.miniaturas{
+    margin-left: 20px;
+    list-style: none;
+}
+
+
+
+/*Ajustes barra desplazamiento*/
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #23232e;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #584EFD;
+}
+
+
+
+
+@media (max-width: 800px) {
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        transition: all 0.3s ease 0s ;
+    }
+
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    
+    #menu{
+        font-size: 12pt;
+
+    }
+
+}
+
+@media (max-width: 1460px) {
+    .contenedorHabitacion{
+        flex-direction: column;
+    }
+
+    .columnainformacion{
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+    .descripcionHabitacion{
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .seccionserviciosyreserva{
+        flex-direction: column;
+
+    }
+
+    #botonReserva{
+        height: 70px;
+        padding: 20px 70px;
+        background: linear-gradient(#584EFD, #584EFD);
+        text-decoration: none;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        margin-top: 20px;
+        margin-left: 0px;
+        text-align: center;
+
+    }
+
+
+
+
+
+    .carrusel{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #imagenExpuesta{
+        width: 100%;
+    }
+
+    .miniaturas{
+        margin-left: 42px;
+        list-style: none;
+
+    }
+    .miniaturas li{
+        display: inline-block;
+    }
+    .miniaturas li img{
+        width: 80px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .habitacion{
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .imagenDeExposicion{
+        width: 100%;
+
+    }
+
+
+}
+
+
+
+@media (max-width: 420px) {
+    nav ul{
+        display: flex;
+        flex-direction: column;
+
+        list-style: none;
+        text-align: center;
+    }
+
+
+    nav ul li{
+
+        margin: 10px 0px;
+
+    }
+
+
+
+}
